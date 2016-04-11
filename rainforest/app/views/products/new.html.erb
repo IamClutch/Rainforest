@@ -2,5 +2,21 @@
 <%= render 'form' %>
 
 <%= link_to 'Back', products_path %>
+<%= form_for @products do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit "Save" %>
+  </p>
 
 <p>Find me in app/views/products/new.html.erb</p>
