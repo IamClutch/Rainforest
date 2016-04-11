@@ -1,7 +1,6 @@
 <h1>Products#index</h1>
-<%= @products.each do |product|%>
-<p><%product.name%> <% product.description %> <% product.formatted_price %>
-<% redirect_to products_url%></p>
+<% @products.each do |product|%>
+<p><%=product.name%> <%= product.description %> <%= product.formatted_price %>
+</p>
 
 <% end %>
-<p>Find me in app/views/products/index.html.erb</p>
