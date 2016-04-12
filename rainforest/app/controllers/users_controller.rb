@@ -15,6 +15,6 @@ end
 
 private
   def user_names
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:email, :password, :password_confirmation, :name)
   end
 end
